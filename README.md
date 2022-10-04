@@ -5,6 +5,17 @@
 * HTML consists of a series of elements.
 * HTML elements tell the browser how to display the content.
 
+        * <b> - Bold text
+        * <strong> - Important text
+        * <i> - Italic text
+        * <em> - Emphasized text
+        * <mark> - Marked text
+        * <small> - Smaller text
+        * <del> - Deleted text
+        * <ins> - Inserted text
+        * <sub> - Subscript text
+        * <sup> - Superscript text
+
 ## CSS (Cascading Style Sheets)
 
 * CSS describes how HTML elements are to be displayed on the screen, paper, or in other media.
