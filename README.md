@@ -26,3 +26,11 @@
 * JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
 * It is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
 * It is a multi purpose & multi paradigm languages.
+
+## Program And Process
+
+* If we write a code in a file that is a program.
+* Program in a running state(execution state) is called process.
+        Program --> Process 
+* Memory is allocated in RAM for the Program.
+![Variables](./1.Basics/variables.png)
