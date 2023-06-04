@@ -37,3 +37,7 @@ console.log(5 >> 1);
 
 // String concatenation
 console.log("Sanket" + " node");
+
+console.log(5 + 5 + "5" + 5 + 5);
+
+console.log((2 > 1) ? "sanket" : "singh");
