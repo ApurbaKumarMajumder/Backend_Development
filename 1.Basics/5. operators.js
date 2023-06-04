@@ -27,3 +27,13 @@ console.log(0 || 4); // 4
 console.log(-4 || 5); // -4
 console.log(3 && 4); // 4
 console.log(3 || 4); // 3
+
+// Bitwise Operators
+console.log(5 & 3);
+console.log(8 | 1);
+console.log(3 ^ 3);
+console.log(5 << 2);
+console.log(5 >> 1);
+
+// String concatenation
+console.log("Sanket" + " node");

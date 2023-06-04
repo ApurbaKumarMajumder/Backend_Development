@@ -34,3 +34,14 @@
         Program --> Process 
 * Memory is allocated in RAM for the Program.
 ![Variables](./1.Basics/variables.png)
+
+## Bitwise Operator
+
+These operators don't directly operate on numbers, but instead operate on binary representation of number.
+
+* Bitwise and -> &
+* Bitwise or -> |
+* Bitwise Xor -> ^
+* Bitwise not -> ~
+* left shift -> <<
+* right shift -> >>
