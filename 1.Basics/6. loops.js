@@ -23,6 +23,18 @@ for (let i = 1; i < 20; i++) {
     console.log(i);
 }
 
-// break -> whenever we hit break, we came out of the nearest loop possible.
+// 1. break -> whenever we hit break, we came out of the nearest loop possible.
 
+for (let i = 0; i < 5; i++) {
+    let str = "";
+    for (let j = 0; true; j++) {
+        str += "*";
+        if (j == i) {
+            break;
+        }
+    }
+    console.log(str);
+}
+
+// 2. continue -> when we hit continue, we again move to the nearest loop for execution.
 
