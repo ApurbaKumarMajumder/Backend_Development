@@ -41,3 +41,8 @@ console.log("Sanket" + " node");
 console.log(5 + 5 + "5" + 5 + 5);
 
 console.log((2 > 1) ? "sanket" : "singh");
+
+let y = (2 < 1) ? "sanket" : null;
+console.log(y);
+
+console.log(3 ** 4);
