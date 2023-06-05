@@ -38,3 +38,9 @@ for (let i = 0; i < 5; i++) {
 
 // 2. continue -> when we hit continue, we again move to the nearest loop for execution.
 
+for (let i = 0; i < 10; i++) {
+    if (i % 3 === 0) {
+        continue;
+    }
+    console.log(i);
+}
