@@ -1,4 +1,4 @@
-## HTML (Hyper Text Markup Language)
+## 1. HTML (Hyper Text Markup Language)
 
 * HTML is the standard markup language for creating Web pages
 * HTML describes the structure of a web page.
@@ -16,18 +16,18 @@
         * <sub> - Subscript text
         * <sup> - Superscript text
 
-## CSS (Cascading Style Sheets)
+## 2. CSS (Cascading Style Sheets)
 
 * CSS describes how HTML elements are to be displayed on the screen, paper, or in other media.
 * CSS saves a lot of work. It can be control the layout of multiple web pages all at once.
 
-## JS (JavaScript)
+## 3. JS (JavaScript)
 
 * JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
 * It is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
 * It is a multi purpose & multi paradigm languages.
 
-## Program And Process
+## 4. Program And Process
 
 * If we write a code in a file that is a program.
 * Program in a running state(execution state) is called process.
@@ -35,7 +35,7 @@
 * Memory is allocated in RAM for the Program.
 ![Variables](./1.Basics/variables.png)
 
-## Bitwise Operator
+## 5. Bitwise Operator
 
 These operators don't directly operate on numbers, but instead operate on binary representation of number.
 
@@ -45,3 +45,18 @@ These operators don't directly operate on numbers, but instead operate on binary
 * Bitwise not -> ~
 * left shift -> <<
 * right shift -> >>
+
+## 6. Functions
+
+A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+
+### <em>Function Invocation</em>
+
+The code inside the function will execute when "something" invokes (calls) the function:
+
+* When an event occurs (when a user clicks a button)
+* When it is invoked (called) from JavaScript code
+* Automatically (self invoked)
+
+![Variables](./1.Basics/Images/functions.png)
+<!-- D:\Backend Development\1.Basics\Images -->
