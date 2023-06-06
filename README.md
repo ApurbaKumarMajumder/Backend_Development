@@ -59,4 +59,3 @@ The code inside the function will execute when "something" invokes (calls) the f
 * Automatically (self invoked)
 
 ![Variables](./1.Basics/Images/functions.png)
-<!-- D:\Backend Development\1.Basics\Images -->
