@@ -33,7 +33,7 @@
 * Program in a running state(execution state) is called process.
         Program --> Process 
 * Memory is allocated in RAM for the Program.
-![Variables](./1.Basics/variables.png)
+![Variables](./1.Basics/Images/variables.png)
 
 ## 5. Bitwise Operator
 
@@ -59,3 +59,4 @@ The code inside the function will execute when "something" invokes (calls) the f
 * Automatically (self invoked)
 
 ![Variables](./1.Basics/Images/functions.png)
+
