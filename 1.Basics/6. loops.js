@@ -44,3 +44,27 @@ for (let i = 0; i < 10; i++) {
     }
     console.log(i);
 }
+
+// switch case
+
+let exp = "*";
+let a = 10;
+let b = 3;
+
+switch(exp) {
+    case "+":
+        console.log(a + b);
+        break;
+    case "-":
+        console.log(a - b);
+        break;
+    case "*":
+        console.log(a * b);
+        break;
+    case "/":
+        console.log(a / b);
+        break;
+    default:
+        console.log("invalid response");
+        break;
+}
