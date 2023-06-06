@@ -47,7 +47,7 @@ for (let i = 0; i < 10; i++) {
 
 // switch case
 
-let exp = "*";
+let exp = "%";
 let a = 10;
 let b = 3;
 
@@ -66,5 +66,17 @@ switch(exp) {
         break;
     default:
         console.log("invalid response");
+        break;
+}
+
+// Note: good examples
+// val = "10" is !== 10
+let val = "10";
+switch(val) {
+    case 10:
+        console.log("yes");
+        break;
+    default:
+        console.log("no");
         break;
 }
