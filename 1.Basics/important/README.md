@@ -1,7 +1,7 @@
 # 1. TypeOf Function
 
-![typeof Function](./typeof.png)
+![typeof Function](../Images/typeof.png)
 
 # 2. Comparision Operator
 
-![Comparision Operator](./Comparision_Operator.png)
+![Comparision Operator](../Images/Comparision_Operator.png)
