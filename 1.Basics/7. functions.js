@@ -6,3 +6,4 @@ function func(x) {
 let x = func(10);
 console.log(x);
 console.log(func(5));
+

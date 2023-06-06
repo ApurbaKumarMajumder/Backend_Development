@@ -60,3 +60,10 @@ The code inside the function will execute when "something" invokes (calls) the f
 
 ![Variables](./1.Basics/Images/functions.png)
 
+### <em>Return</em>
+
+return keyword returns an output out of the function & immediately stops the functions execution.
+
+        console.log()
+
+returns <b>undefiles</b> after the execution of the line.
