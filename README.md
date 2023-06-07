@@ -67,3 +67,27 @@ return keyword returns an output out of the function & immediately stops the fun
         console.log()
 
 returns <b>undefiles</b> after the execution of the line.
+
+## 7. Coercion
+
+Coercion stands for type inter conversion.
+- implicit
+- explicit
+
+C++, Java, C -> types exist for variables.
+        
+        int x = 10;
+
+JavaScript -> types exist for values.
+
+        let x = 10; // now x = number
+        x = "str"; // type conversion is allowed
+
+"Everything in JS is an Object" -> false statement.
+
+first abstract operation that we need to learn is <span style="color:yellow">ToPrimitive</span>.
+
+### (i) ToPrimitive:
+
+* The ToPrimitive abstract operation, takes an input argument and an optional <span style="color:green">Preferred Type</span> argument.
+* This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses <span style="color:green">Preferred Type</span> argument to resolve it.

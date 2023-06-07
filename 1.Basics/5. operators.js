@@ -46,3 +46,12 @@ let y = (2 < 1) ? "sanket" : null;
 console.log(y);
 
 console.log(3 ** 4);
+
+// Unary Operator
+
+// x++    x--
+
+let z = 10;
+let c = z++;
+
+console.log(z, c);
