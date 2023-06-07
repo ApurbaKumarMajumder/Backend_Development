@@ -85,7 +85,7 @@ JavaScript -> types exist for values.
 
 "Everything in JS is an Object" -> false statement.
 
-first abstract operation that we need to learn is <span style="color:yellow">ToPrimitive</span>.
+first abstract operation that we need to learn is <font color="yellow">ToPrimitive</font>.
 
 ### (i) ToPrimitive:
 
