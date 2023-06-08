@@ -70,9 +70,16 @@ returns <b>undefiles</b> after the execution of the line.
 
 ## 7. Coercion
 
+Every language has got some mechanism for type **interconversion**.
+for example - in java if we do -> System.out.println("Hello" + 22);
+
+The above code will print -> Hello22 i.e., it did convert 22 from integer to string & then did concatination.
+
+Similarly this concept exist in JS also. For JS things are a bit more tricky as JS handels wide range of cases.
+
 Coercion stands for type inter conversion.
-- implicit
-- explicit
+
+![Type_Interconversion](./1.Basics/Images/Type_Interconversion.png)
 
 C++, Java, C -> types exist for variables.
         
@@ -96,7 +103,7 @@ first abstract operation that we need to learn is **ToPrimitive**.
 * if hint/preferred type is number then on our input argument we call valueOf() function to get a number & if it doesn't gets a primitive we call toString() function.
 * otherwise, if jint argument is "String" then we call toString() & then valueOf().
 
-![ToPrimitive](./1.Basics/Images/ToPrimitive.png)
+![ToPrimitive](./1.Basics/Images/ToPrimitive.png) 
 
 1. ToNumber Function:
 
