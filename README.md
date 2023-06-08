@@ -120,4 +120,7 @@ For example **subtraction operation**.
 
 ![ToPrimitive](./1.Basics/Images/toNumber.png)
 
-We can use '-' operation 
+We can use '-' operation to mimic ToNumber.
+
+![subtraction](./1.Basics/Images/subtraction.png)
+
