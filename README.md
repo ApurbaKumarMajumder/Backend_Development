@@ -81,6 +81,25 @@ Coercion stands for type inter conversion.
 
 ![Type_Interconversion](./1.Basics/Images/Type_Interconversion.png)
 
+### (i) ToPrimitive:
+
+* The ToPrimitive abstract operation, takes an input argument and an optional **Preferred Type** argument.
+* This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses **Preferred Type** argument to resolve it.
+* As we said, this is also an abstract operation, that means it is conceptual, we cannot invoke it, but JS internally can.
+* The ToPrimitive function prefers string & number conversion.
+* if hint/preferred type is number then on our input argument we call valueOf() function to get a number & if it doesn't gets a primitive we call toString() function.
+* otherwise, if jint argument is "String" then we call toString() & then valueOf().
+
+![ToPrimitive](./1.Basics/Images/ToPrimitive.png) 
+
+## Abstract Operations
+
+These are experations/functions which are not available for end users to use. But JS internally uses it & these are mentioned in the official docs to actually aid the documentation.
+
+for example: ToString, ToNumber, ToBoolean, ToPrimitive etc.
+
+We cannot directly ccall them. But few JS operations like '-'(subtraction), '+'(addition) etc. Internally calls them & hence we can mimic them using these operations.
+
 C++, Java, C -> types exist for variables.
         
         int x = 10;
@@ -94,20 +113,11 @@ JavaScript -> types exist for values.
 
 first abstract operation that we need to learn is **ToPrimitive**.
 
-### (i) ToPrimitive:
-
-* The ToPrimitive abstract operation, takes an input argument and an optional **Preferred Type** argument.
-* This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses **Preferred Type** argument to resolve it.
-* As we said, this is also an abstract operation, that means it is conceptual, we cannot invoke it, but JS internally can.
-* The ToPrimitive function prefers string & number conversion.
-* if hint/preferred type is number then on our input argument we call valueOf() function to get a number & if it doesn't gets a primitive we call toString() function.
-* otherwise, if jint argument is "String" then we call toString() & then valueOf().
-
-![ToPrimitive](./1.Basics/Images/ToPrimitive.png) 
-
 1. ToNumber Function:
 
 Whenever in an number operation we don't have a number, ToNumber() is called.
 For example **subtraction operation**.
 
 ![ToPrimitive](./1.Basics/Images/toNumber.png)
+
+We can use '-' operation 
