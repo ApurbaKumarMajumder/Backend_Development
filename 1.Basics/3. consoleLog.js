@@ -10,3 +10,7 @@ process.stdout.write(" world");
 // It returns undefined.
 
 console.log(console.log(10));
+
+console.log(true - false);
+console.log(true - "false");
+console.log(true);

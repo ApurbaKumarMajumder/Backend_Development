@@ -93,4 +93,14 @@ first abstract operation that we need to learn is **ToPrimitive**.
 * This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses **Preferred Type** argument to resolve it.
 * As we said, this is also an abstract operation, that means it is conceptual, we cannot invoke it, but JS internally can.
 * The ToPrimitive function prefers string & number conversion.
+* if hint/preferred type is number then on our input argument we call valueOf() function to get a number & if it doesn't gets a primitive we call toString() function.
+* otherwise, if jint argument is "String" then we call toString() & then valueOf().
 
+![ToPrimitive](./1.Basics/Images/ToPrimitive.png)
+
+1. ToNumber Function:
+
+Whenever in an number operation we don't have a number, ToNumber() is called.
+For example **subtraction operation**.
+
+![ToPrimitive](./1.Basics/Images/toNumber.png)
