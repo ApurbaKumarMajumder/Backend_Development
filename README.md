@@ -85,9 +85,12 @@ JavaScript -> types exist for values.
 
 "Everything in JS is an Object" -> false statement.
 
-first abstract operation that we need to learn is <font color="yellow">ToPrimitive</font>.
+first abstract operation that we need to learn is **ToPrimitive**.
 
 ### (i) ToPrimitive:
 
-* The ToPrimitive abstract operation, takes an input argument and an optional <span style="color:green">Preferred Type</span> argument.
-* This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses <span style="color:green">Preferred Type</span> argument to resolve it.
+* The ToPrimitive abstract operation, takes an input argument and an optional **Preferred Type** argument.
+* This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses **Preferred Type** argument to resolve it.
+* As we said, this is also an abstract operation, that means it is conceptual, we cannot invoke it, but JS internally can.
+* The ToPrimitive function prefers string & number conversion.
+
