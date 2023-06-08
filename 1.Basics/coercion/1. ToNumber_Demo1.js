@@ -14,5 +14,27 @@ console.log(null - 5);
 */
 console.log("132" - 10);
 /**
- *  
+ * "132" is a string, so we make it undergo ToNumber abstract operation
+ * ToNumber("132") -> 132
+ * 132 - 10 = 122
+*/
+console.log("12fd" - 20);
+/**
+ * "12fd" is a string, so we make it undergo ToNumber abstract operation
+ * ToNumber("12fd") -> NaN because this string cannot be parsed a number
+ * NaN - 20 -> NaN
+*/
+// console.log(Symbol("123") - 30); // gives typerror
+console.log(4 - true);
+/**
+ * true is a boolean, so we make it undergo ToNumber abstract operation.
+ * ToNumber(true) -> 1
+ * 4 - 3 = 1
+*/
+console.log("0xf" - 1);
+/**
+ * "0xf", is a string, but in the starting we have 0x which denotes start of hexadecimal
+ * so if we can convert this string to a valid hexadecimal, we will do it
+ * ToNumber("0xf") -> 15
+ * 15 - 1 = 14 
 */
