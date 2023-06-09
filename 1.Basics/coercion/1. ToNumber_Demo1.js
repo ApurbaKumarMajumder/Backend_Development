@@ -38,3 +38,17 @@ console.log("0xf" - 1);
  * ToNumber("0xf") -> 15
  * 15 - 1 = 14 
 */
+console.log("0xz" - 1);
+/**
+ * "0xz" is having 0x in the start to denote hexadecimal, but z is not a valid hexadecimal.
+ * ToNumber("0xz") -> NaN
+ * NaN - 1 = NaN
+*/
+console.log("abcd" - 2);
+console.log("0xabcd" -2);
+console.log("0o11" - 1); // "0o11" -> 9 in hexadecimal
+/**
+ * "0o11" is a string, and can became a valid octal number
+ * ToNumber("0o11") -> 9
+ * 9 - 1 = 8
+*/
