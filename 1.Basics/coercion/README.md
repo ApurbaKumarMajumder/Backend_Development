@@ -12,3 +12,7 @@ more..
 We can use '+' operator to mimic ToString operation for representation.
  
 ![ToString](./tostring.png)
+
+more of the string operations.
+
+![ToString](./tostring1.png)

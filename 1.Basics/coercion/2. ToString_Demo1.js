@@ -16,3 +16,6 @@ console.log("5" + null);
  * One of them is already a string, so both of them becomes a string
  * "5" + "null" -> "5null"
 */
+console.log("Sanket" + true);
+console.log("Sanket" + [null, undefined]);
+console.log("Sanket" + [[], [], []]);
