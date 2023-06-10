@@ -16,4 +16,19 @@ console.log(10 - {"a": 45});
  * then we call toString -> it return '[object Object]' which is primitive
  * so call ToNumber on '[object Object]' again which gives NaN
  * 10 - NaN = NaN
- */
+*/
+
+let x = {"b": 90, valueOf() {return 2;}, toString() {return "custom";}}
+console.log(x - 10);
+/**
+ * x is an object, we need to pass x to ToPrimitive with hint Number
+ * we call valueOf -> it return 2; which is a primitive
+ * x becomes 2, 10 is already a number
+ * 2 - 10 = -8 
+*/
+
+console.log(x + "Sanket"); // 2Sanket
+// console.log("Sanket" + {"a": 90, valueOf() {return {}}, toString() {return {}}}); // this will through error
+
+console.log({} + "hello"); // in some systems it showed NaN
+console.log("hello" + {});

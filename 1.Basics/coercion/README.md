@@ -40,3 +40,27 @@ By default toString() on a object returns -> '[object Object]' (this is a random
 By default valueOf() -> on an object returns same object.
 
 for array -> valueOf -> same array toString -> print array without parentheses.
+
+# ToBoolean
+
+The ToBoolean abstract operation converts the given type to a Boolean value. ToBoolean works a bit differently when compared to ToString as ToNumber.
+
+It maintains a list of values which when received as an argument returns False. And everything apart from the list of values returns True.
+
+List of Falsy values ->
+
+    null
+    undefined
+    +0
+    -0
+    NaN
+    "" (empty string)
+    false
+
+if we get any one of these values in the argument we return False else we return True.
+
+Q. How can we test the ToBoolean operation?
+
+Ans: We can use **logical Not Operator(!)** 
+
+![logicalNot](./logicalNot.png)
