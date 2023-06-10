@@ -82,3 +82,9 @@ The main difference is
     ii. strict equality (===) never does coercion.
 
     Note: In JS NaN is the only Primitive value not equal to itself.
+
+# 6. NaN (Not a Number)
+
+typeOf(NaN) -> number
+
+It doesn't actually mean not a number, rather it gives notion of an invalid number.
