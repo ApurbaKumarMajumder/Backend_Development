@@ -41,7 +41,7 @@ By default valueOf() -> on an object returns same object.
 
 for array -> valueOf -> same array toString -> print array without parentheses.
 
-# ToBoolean
+# 4. ToBoolean
 
 The ToBoolean abstract operation converts the given type to a Boolean value. ToBoolean works a bit differently when compared to ToString as ToNumber.
 
@@ -64,3 +64,21 @@ Q. How can we test the ToBoolean operation?
 Ans: We can use **logical Not Operator(!)** 
 
 ![logicalNot](./logicalNot.png)
+
+# 5. What is the difference between == and === ?
+
+== is the **abstract equality comparison operator** and === is the **strict equality comparison operator**. They both are ways to check for equality.
+![equality](./equality.png)
+
+Actually both == and === checks the types but the difference is both of them do something different after checking the type.
+
+So == does type checking and if types are same it calls === for further operations.
+
+=== checks types & if types are not same return false.
+
+The main difference is
+
+    i. abstract equality (==) does coercion if types are not same.
+    ii. strict equality (===) never does coercion.
+
+    Note: In JS NaN is the only Primitive value not equal to itself.
