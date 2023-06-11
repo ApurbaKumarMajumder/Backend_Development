@@ -88,3 +88,30 @@ The main difference is
 typeOf(NaN) -> number
 
 It doesn't actually mean not a number, rather it gives notion of an invalid number.
+
+![NaN](./nan.png)
+
+# 7. isNaN (function with some issues)
+
+This isNaN function coerces the argument before checking for NaN. Now String is not NaN right?? but when we convert "abc" to a number it becomes NaN and hence isNaN returns true.
+
+# 8. Types Of Programming Language
+
+While developning apps, we might encounter multiple programming languages. Every language might of different properties.
+
+Based how the language executes the code we can categories languages in the following:
+
+    1. Compiled -> C++
+    2. Interpreted -> shellScript
+    3. Hybrid -> both compiled and interpreted
+
+JavaScript is Hybrid.
+
+# 9. Boxing
+
+It is a phenomenon in JS where it tries to convert primitive into objects.
+
+Boxing can be:
+
+    1. Manual
+    2. Automatic
