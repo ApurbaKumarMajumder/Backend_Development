@@ -115,3 +115,22 @@ Boxing can be:
 
     1. Manual
     2. Automatic
+
+# 10. Scopes
+
+In Simple words, scopes is simply where to look for things. What are we looking for? We are looking for variables & functions.
+
+We have more or less 3 types of scopes in JavaScript:
+
+    1. Global Scope
+    2. Function Scope
+    3. Block Scope
+
+### 1. Global Scope
+
+If a variable is present in a global scope, then it is accessable everywhere in the JS file.
+
+Q. But how do we define a variable in global scope?
+
+There are many ways -> one of the way is to declare/define variables outside any function.
+
