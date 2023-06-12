@@ -172,3 +172,9 @@ Now if a variable/function is only accessable/visible inside a bloxk then it wil
 
     If we use it outside a function, no matter if it is enclosed in a block or not, it will give the variable global scope.
 
+## 2. let
+
+    Whenever we initialise a variable with let, it always gets the scope of enclosing Block.
+
+    let will not let you do redeclarations.
+
