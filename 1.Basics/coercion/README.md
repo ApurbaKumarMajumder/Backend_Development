@@ -1,4 +1,4 @@
-## 7. Coercion
+# Coercion
 
 Every language has got some mechanism for type **interconversion**.
 for example - in java if we do -> System.out.println("Hello" + 22);
@@ -11,7 +11,7 @@ Coercion stands for type inter conversion.
 
 ![Type_Interconversion](../Images/Type_Interconversion.png)
 
-# 1. ToNumber
+## 1. ToNumber
 
 Whenever in an number operation we don't have a number, ToNumber() is called.
 For example **subtraction operation**.
@@ -30,7 +30,7 @@ more..
 
 ![ToNumber2](./ToNumber2.png)
 
-# 2. ToString
+## 2. ToString
 
 We can use '+' operator to mimic ToString operation for representation.
  
@@ -61,7 +61,7 @@ JavaScript -> types exist for values.
 
 first abstract operation that we need to learn is **ToPrimitive**.
 
-# 3. ToPrimitive
+## 3. ToPrimitive
 
 * The ToPrimitive abstract operation, takes an input argument and an optional **Preferred Type** argument.
 * This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses **Preferred Type** argument to resolve it.
@@ -94,7 +94,7 @@ By default valueOf() -> on an object returns same object.
 
 for array -> valueOf -> same array toString -> print array without parentheses.
 
-# 4. ToBoolean
+## 4. ToBoolean
 
 The ToBoolean abstract operation converts the given type to a Boolean value. ToBoolean works a bit differently when compared to ToString as ToNumber.
 

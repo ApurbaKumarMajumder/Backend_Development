@@ -149,3 +149,26 @@ If a variable is present in a global scope, then it is accessable everywhere in 
 Q. But how do we define a variable in global scope?
 
 There are many ways -> one of the way is to declare/define variables outside any function.
+
+## 2. Function Scope
+
+In a function, the visibility of a variable/function is just inside the outer function.
+
+    function fun() {
+        var x = 10; // here x is just accessable inside fun or we can say it is local to fun.
+    }
+
+## 3. Block Scope
+
+In JS we can use a pair of curly braces to declare a block.
+
+Now if a variable/function is only accessable/visible inside a bloxk then it will be having block scope.
+
+# 14. let, var & const
+
+## 1. var 
+
+    Whenever we use a var anywhere inside a function, the variable gets function scope.
+
+    If we use it outside a function, no matter if it is enclosed in a block or not, it will give the variable global scope.
+
