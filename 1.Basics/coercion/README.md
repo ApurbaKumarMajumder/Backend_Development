@@ -1,6 +1,29 @@
+## 7. Coercion
+
+Every language has got some mechanism for type **interconversion**.
+for example - in java if we do -> System.out.println("Hello" + 22);
+
+The above code will print -> Hello22 i.e., it did convert 22 from integer to string & then did concatination.
+
+Similarly this concept exist in JS also. For JS things are a bit more tricky as JS handels wide range of cases.
+
+Coercion stands for type inter conversion.
+
+![Type_Interconversion](../Images/Type_Interconversion.png)
+
 # 1. ToNumber
 
-this are some examples of type conversions.
+Whenever in an number operation we don't have a number, ToNumber() is called.
+For example **subtraction operation**.
+
+![ToPrimitive](../Images/toNumber.png)
+
+We can use '-' operation to mimic ToNumber.                                     
+
+![subtraction](../Images/subtraction.png)
+
+this are some examples of type conversions.              
+
 ![ToNumber1](./ToNumber1.png)
 
 more..
@@ -17,7 +40,37 @@ more of the string operations.
 
 ![ToString](./tostring1.png)
 
+## Abstract Operations
+
+These are experations/functions which are not available for end users to use. But JS internally uses it & these are mentioned in the official docs to actually aid the documentation.
+
+for example: ToString, ToNumber, ToBoolean, ToPrimitive etc.
+
+We cannot directly ccall them. But few JS operations like '-'(subtraction), '+'(addition) etc. Internally calls them & hence we can mimic them using these operations.
+
+C++, Java, C -> types exist for variables.
+        
+        int x = 10;
+
+JavaScript -> types exist for values.
+
+        let x = 10; // now x = number
+        x = "str"; // type conversion is allowed
+
+"Everything in JS is an Object" -> false statement.
+
+first abstract operation that we need to learn is **ToPrimitive**.
+
 # 3. ToPrimitive
+
+* The ToPrimitive abstract operation, takes an input argument and an optional **Preferred Type** argument.
+* This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses **Preferred Type** argument to resolve it.
+* As we said, this is also an abstract operation, that means it is conceptual, we cannot invoke it, but JS internally can.
+* The ToPrimitive function prefers string & number conversion.
+* if hint/preferred type is number then on our input argument we call valueOf() function to get a number & if it doesn't gets a primitive we call toString() function.
+* otherwise, if jint argument is "String" then we call toString() & then valueOf().
+
+![ToPrimitive](../Images/ToPrimitive.png) 
 
 (internally calls Ordinary to primitive)
 
@@ -64,73 +117,3 @@ Q. How can we test the ToBoolean operation?
 Ans: We can use **logical Not Operator(!)** 
 
 ![logicalNot](./logicalNot.png)
-
-# 5. What is the difference between == and === ?
-
-== is the **abstract equality comparison operator** and === is the **strict equality comparison operator**. They both are ways to check for equality.
-![equality](./equality.png)
-
-Actually both == and === checks the types but the difference is both of them do something different after checking the type.
-
-So == does type checking and if types are same it calls === for further operations.
-
-=== checks types & if types are not same return false.
-
-The main difference is
-
-    i. abstract equality (==) does coercion if types are not same.
-    ii. strict equality (===) never does coercion.
-
-    Note: In JS NaN is the only Primitive value not equal to itself.
-
-# 6. NaN (Not a Number)
-
-typeOf(NaN) -> number
-
-It doesn't actually mean not a number, rather it gives notion of an invalid number.
-
-![NaN](./nan.png)
-
-# 7. isNaN (function with some issues)
-
-This isNaN function coerces the argument before checking for NaN. Now String is not NaN right?? but when we convert "abc" to a number it becomes NaN and hence isNaN returns true.
-
-# 8. Types Of Programming Language
-
-While developning apps, we might encounter multiple programming languages. Every language might of different properties.
-
-Based how the language executes the code we can categories languages in the following:
-
-    1. Compiled -> C++
-    2. Interpreted -> shellScript
-    3. Hybrid -> both compiled and interpreted
-
-JavaScript is Hybrid.
-
-# 9. Boxing
-
-It is a phenomenon in JS where it tries to convert primitive into objects.
-
-Boxing can be:
-
-    1. Manual
-    2. Automatic
-
-# 10. Scopes
-
-In Simple words, scopes is simply where to look for things. What are we looking for? We are looking for variables & functions.
-
-We have more or less 3 types of scopes in JavaScript:
-
-    1. Global Scope
-    2. Function Scope
-    3. Block Scope
-
-### 1. Global Scope
-
-If a variable is present in a global scope, then it is accessable everywhere in the JS file.
-
-Q. But how do we define a variable in global scope?
-
-There are many ways -> one of the way is to declare/define variables outside any function.
-

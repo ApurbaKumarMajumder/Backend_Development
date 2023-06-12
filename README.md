@@ -1,4 +1,4 @@
-## 1. HTML (Hyper Text Markup Language)
+# 1. HTML (Hyper Text Markup Language)
 
 * HTML is the standard markup language for creating Web pages
 * HTML describes the structure of a web page.
@@ -16,18 +16,18 @@
         * <sub> - Subscript text
         * <sup> - Superscript text
 
-## 2. CSS (Cascading Style Sheets)
+# 2. CSS (Cascading Style Sheets)
 
 * CSS describes how HTML elements are to be displayed on the screen, paper, or in other media.
 * CSS saves a lot of work. It can be control the layout of multiple web pages all at once.
 
-## 3. JS (JavaScript)
+# 3. JS (JavaScript)
 
 * JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
 * It is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
 * It is a multi purpose & multi paradigm languages.
 
-## 4. Program And Process
+# 4. Program And Process
 
 * If we write a code in a file that is a program.
 * Program in a running state(execution state) is called process.
@@ -35,7 +35,7 @@
 * Memory is allocated in RAM for the Program.
 ![Variables](./1.Basics/Images/variables.png)
 
-## 5. Bitwise Operator
+# 5. Bitwise Operator
 
 These operators don't directly operate on numbers, but instead operate on binary representation of number.
 
@@ -46,11 +46,11 @@ These operators don't directly operate on numbers, but instead operate on binary
 * left shift -> <<
 * right shift -> >>
 
-## 6. Functions
+# 6. Functions
 
 A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 
-### <em>Function Invocation</em>
+## <em>Function Invocation</em>
 
 The code inside the function will execute when "something" invokes (calls) the function:
 
@@ -60,7 +60,7 @@ The code inside the function will execute when "something" invokes (calls) the f
 
 ![Variables](./1.Basics/Images/functions.png)
 
-### <em>Return</em>
+## <em>Return</em>
 
 return keyword returns an output out of the function & immediately stops the functions execution.
 
@@ -68,7 +68,7 @@ return keyword returns an output out of the function & immediately stops the fun
 
 returns <b>undefiles</b> after the execution of the line.
 
-## 7. Coercion
+# 7. Coercion
 
 Every language has got some mechanism for type **interconversion**.
 for example - in java if we do -> System.out.println("Hello" + 22);
@@ -81,46 +81,71 @@ Coercion stands for type inter conversion.
 
 ![Type_Interconversion](./1.Basics/Images/Type_Interconversion.png)
 
-### (i) ToPrimitive:
+# 8. What is the difference between == and === ?
 
-* The ToPrimitive abstract operation, takes an input argument and an optional **Preferred Type** argument.
-* This operation converts the input to a non-object type values. If an argument is capable of getting converted into more than one primitive type, then the function uses **Preferred Type** argument to resolve it.
-* As we said, this is also an abstract operation, that means it is conceptual, we cannot invoke it, but JS internally can.
-* The ToPrimitive function prefers string & number conversion.
-* if hint/preferred type is number then on our input argument we call valueOf() function to get a number & if it doesn't gets a primitive we call toString() function.
-* otherwise, if jint argument is "String" then we call toString() & then valueOf().
+== is the **abstract equality comparison operator** and === is the **strict equality comparison operator**. They both are ways to check for equality.
+![equality](./Images/equality.png)
 
-![ToPrimitive](./1.Basics/Images/ToPrimitive.png) 
+Actually both == and === checks the types but the difference is both of them do something different after checking the type.
 
-## Abstract Operations
+So == does type checking and if types are same it calls === for further operations.
 
-These are experations/functions which are not available for end users to use. But JS internally uses it & these are mentioned in the official docs to actually aid the documentation.
+=== checks types & if types are not same return false.
 
-for example: ToString, ToNumber, ToBoolean, ToPrimitive etc.
+The main difference is
 
-We cannot directly ccall them. But few JS operations like '-'(subtraction), '+'(addition) etc. Internally calls them & hence we can mimic them using these operations.
+    i. abstract equality (==) does coercion if types are not same.
+    ii. strict equality (===) never does coercion.
 
-C++, Java, C -> types exist for variables.
-        
-        int x = 10;
+    Note: In JS NaN is the only Primitive value not equal to itself.
 
-JavaScript -> types exist for values.
+# 9. NaN (Not a Number)
 
-        let x = 10; // now x = number
-        x = "str"; // type conversion is allowed
+typeOf(NaN) -> number
 
-"Everything in JS is an Object" -> false statement.
+It doesn't actually mean not a number, rather it gives notion of an invalid number.
 
-first abstract operation that we need to learn is **ToPrimitive**.
+![NaN](./Images/nan.png)
 
-1. ToNumber Function:
+# 10. isNaN (function with some issues)
 
-Whenever in an number operation we don't have a number, ToNumber() is called.
-For example **subtraction operation**.
+This isNaN function coerces the argument before checking for NaN. Now String is not NaN right?? but when we convert "abc" to a number it becomes NaN and hence isNaN returns true.
 
-![ToPrimitive](./1.Basics/Images/toNumber.png)
+# 11. Types Of Programming Language
 
-We can use '-' operation to mimic ToNumber.
+While developning apps, we might encounter multiple programming languages. Every language might of different properties.
 
-![subtraction](./1.Basics/Images/subtraction.png)
+Based how the language executes the code we can categories languages in the following:
 
+    1. Compiled -> C++
+    2. Interpreted -> shellScript
+    3. Hybrid -> both compiled and interpreted
+
+JavaScript is Hybrid.
+
+# 12. Boxing
+
+It is a phenomenon in JS where it tries to convert primitive into objects.
+
+Boxing can be:
+
+    1. Manual
+    2. Automatic
+
+# 13. Scopes
+
+In Simple words, scopes is simply where to look for things. What are we looking for? We are looking for variables & functions.
+
+We have more or less 3 types of scopes in JavaScript:
+
+    1. Global Scope
+    2. Function Scope
+    3. Block Scope
+
+## 1. Global Scope
+
+If a variable is present in a global scope, then it is accessable everywhere in the JS file.
+
+Q. But how do we define a variable in global scope?
+
+There are many ways -> one of the way is to declare/define variables outside any function.
