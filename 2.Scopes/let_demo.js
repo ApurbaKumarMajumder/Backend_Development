@@ -9,5 +9,11 @@ function fun() {
     console.log(y);
 }
 
+// console.log(z); // error: Cannot access 'z' before initialization
+
 fun();
 // console.log(x); // will not work as let have only block level of scope
+
+let z = 99;
+fun();
+console.log(z);
