@@ -224,3 +224,15 @@ What JS does is, it will start the parsing phase. Outside every thing it maintai
 Whenever we declare a variable using var/let/const or initialise a function it is a **Formal Declaration**.
 
 In the parsing phase JS looks for formal declarations only. In this phase we only allocate scope, not values of the variables. THe moment we go in a function, we maintain a new scope as well i.e. **function scope**.
+
+<ins>Phase 2:</ins> Execution
+
+image 1
+
+Auto Globals -> In JS if we keep searching scope of variable in outerscopes & no where find it, we automatically consider it in global scope. This happens during execution phase.
+
+autoglobals only works with target reference & not source.
+
+image 2
+
+image 3
