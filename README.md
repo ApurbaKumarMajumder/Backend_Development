@@ -180,6 +180,18 @@ Now if a variable/function is only accessable/visible inside a bloxk then it wil
 
     If we declare, let outside any block, then it doesnot get complete global scope.
 
-    Note: let will not let you do redeclarations but reassignment is fine. if you initialize a variable with let outside anyblock, then also it will not become accessable completely in the global scope, but if you do with var, it will be.
+    Note: let will not let you do redeclarations but reassignment is fi ne. if you initialize a variable with let outside anyblock, then also it will not become accessable completely in the global scope, but if you do with var, it will be.
 
-## 3. 
+## 3. const
+
+    It also has block scope, (same as let) the only difference is it doesn't allow reassignmeant.
+
+    const y = 10;
+    y = 22; // error
+
+# How JS, parses the code?
+
+So we know that JS is not interpreted, it definetely is hybrid i.e. compiled + interpreted.
+
+So wheneven we try to execute a JS code, JS first parses the whole code, in this parsing phase it assigns scopes to variables / function. Once done, then it reads the code & executes it.
+
