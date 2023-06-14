@@ -195,3 +195,25 @@ So we know that JS is not interpreted, it definetely is hybrid i.e. compiled + i
 
 So wheneven we try to execute a JS code, JS first parses the whole code, in this parsing phase it assigns scopes to variables / function. Once done, then it reads the code & executes it.
 
+Every variable in your code will be used in one of the following ways:
+
+1. Either it will be getting a value assigned i.e. it is used as a target.
+
+    (x is the target)    x = 10
+
+2. or it will be used to retrieve a value i.e. it will be used as source.
+
+    y = 10 + x (x is the source in this code)
+
+What JS does is, it will start the parsing phase. Outside every thing it maintains global scope, but the moment it goes inside a function it starts maintaining scope of that function also.
+
+    var teacher = "Sanket";
+    function fun() {
+        var teacher = "Pulkit";
+        console.log(teacher);
+    }
+    fun();
+
+<ins>Phase 1:</ins> Parsing -> we will just do scope resolution.
+
+Whenever we declare a variable using var/let/const it is a **Formal Declaration**.
