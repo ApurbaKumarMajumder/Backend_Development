@@ -58,7 +58,7 @@ The code inside the function will execute when "something" invokes (calls) the f
 * When it is invoked (called) from JavaScript code
 * Automatically (self invoked)
 
-![Variables](./1.Basics/Images/functions.png)
+![functions](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/847dfe30-be52-4781-a706-57f27cdcc742)
 
 ## <em>Return</em>
 
@@ -79,12 +79,13 @@ Similarly this concept exist in JS also. For JS things are a bit more tricky as 
 
 Coercion stands for type inter conversion.
 
-![Type_Interconversion](./1.Basics/Images/Type_Interconversion.png)
+![Type Interconversion](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/e64545a1-fc2e-447b-bb96-3cfd467b9f5f)
 
 # 8. What is the difference between == and === ?
 
 == is the **abstract equality comparison operator** and === is the **strict equality comparison operator**. They both are ways to check for equality.
-![equality](./Images/equality.png)
+
+![equality](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/ace18f9a-22fd-4660-af5b-6a423cc3f9aa)
 
 Actually both == and === checks the types but the difference is both of them do something different after checking the type.
 
@@ -105,7 +106,7 @@ typeOf(NaN) -> number
 
 It doesn't actually mean not a number, rather it gives notion of an invalid number.
 
-![NaN](./Images/nan.png)
+![nan](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/438348e6-fd47-497e-8882-fc8f3626f18c)
 
 # 10. isNaN (function with some issues)
 
