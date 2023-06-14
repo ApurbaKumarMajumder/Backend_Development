@@ -218,7 +218,7 @@ What JS does is, it will start the parsing phase. Outside every thing it maintai
 
 <ins>Phase 1:</ins> Parsing -> we will just do scope resolution.
 
-![Example Image](https://drive.google.com/file/d/1mse0YYBq2FQygjSSsU-r2q7jVCsUV28k/view)
+![phase 1](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/4bd8c370-6207-4dd6-a3a9-afd37b5d8390)
 
 Whenever we declare a variable using var/let/const or initialise a function it is a **Formal Declaration**.
 
