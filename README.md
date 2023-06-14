@@ -180,7 +180,9 @@ Now if a variable/function is only accessable/visible inside a bloxk then it wil
 
     If we declare, let outside any block, then it doesnot get complete global scope.
 
-    Note: let will not let you do redeclarations but reassignment is fi ne. if you initialize a variable with let outside anyblock, then also it will not become accessable completely in the global scope, but if you do with var, it will be.
+    Note: let will not let you do redeclarations but reassignment is fine. 
+    
+    If you initialize a variable with let outside anyblock, then also it will not become accessable completely in the global scope, but if you do with var, it will be.
 
 ## 3. const
 
@@ -216,4 +218,8 @@ What JS does is, it will start the parsing phase. Outside every thing it maintai
 
 <ins>Phase 1:</ins> Parsing -> we will just do scope resolution.
 
-Whenever we declare a variable using var/let/const it is a **Formal Declaration**.
+![Example Image](https://drive.google.com/file/d/1mse0YYBq2FQygjSSsU-r2q7jVCsUV28k/view)
+
+Whenever we declare a variable using var/let/const or initialise a function it is a **Formal Declaration**.
+
+In the parsing phase JS looks for formal declarations only. In this phase we only allocate scope, not values of the variables. THe moment we go in a function, we maintain a new scope as well i.e. **function scope**.
