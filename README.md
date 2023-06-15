@@ -257,3 +257,5 @@ Function Expression are of 2 types:
 
 1. Anonymous
 2. Named
+
+![scope of function expression](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/5d694db7-841b-4ba7-9082-a898a4fcea9a)
