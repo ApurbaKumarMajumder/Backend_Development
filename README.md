@@ -33,7 +33,8 @@
 * Program in a running state(execution state) is called process.
         Program --> Process 
 * Memory is allocated in RAM for the Program.
-![Variables](./1.Basics/Images/variables.png)
+
+![variables](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/abd9e51a-0cf3-4c19-8afc-a18bc5a18cd8)
 
 # 5. Bitwise Operator
 
