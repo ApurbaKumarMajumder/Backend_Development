@@ -227,15 +227,15 @@ In the parsing phase JS looks for formal declarations only. In this phase we onl
 
 <ins>Phase 2:</ins> Execution
 
-image 1
+![code execution](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/e5f37f20-9478-43c1-ac3b-e8535f450d5a)
 
 Auto Globals -> In JS if we keep searching scope of variable in outerscopes & no where find it, we automatically consider it in global scope. This happens during execution phase.
 
 autoglobals only works with target reference & not source.
 
-image 2
+![4](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/c2b78d4e-b8b9-4553-ad55-d1250d907ee3)
 
-image 3
+![2](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/98591f6c-67f3-4fb2-9b80-e1841330867b)
 
 # Undefined vs Undeclared
 
