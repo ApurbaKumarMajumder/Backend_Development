@@ -249,7 +249,7 @@ Hoisting is a direct consequence of lexiccal parsing that happens in JS, due to 
 
 # Function Expresion
 
-image 1
+![1](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/688b788c-2aef-4043-9163-1274d2a30d07)
 
 In JS, we can pass functions as an argument to another function.
 
