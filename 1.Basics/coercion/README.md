@@ -9,36 +9,36 @@ Similarly this concept exist in JS also. For JS things are a bit more tricky as 
 
 Coercion stands for type inter conversion.
 
-![Type_Interconversion](../Images/Type_Interconversion.png)
+![Type_Interconversion](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/9637010a-ae1c-411b-9bf4-c60a06803d4c)
 
 ## 1. ToNumber
 
 Whenever in an number operation we don't have a number, ToNumber() is called.
 For example **subtraction operation**.
 
-![ToPrimitive](../Images/toNumber.png)
+![toNumber](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/4d9737ee-5d91-4846-8282-f42b6355d3cf)
 
 We can use '-' operation to mimic ToNumber.                                     
 
-![subtraction](../Images/subtraction.png)
+![subtraction](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/2beaaf9d-0c6f-4ace-84bc-c065fed5ab00)
 
 this are some examples of type conversions.              
 
-![ToNumber1](./ToNumber1.png)
+![ToNumber1](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/bda88f1f-92d6-4d51-b095-b4fbb969a68a)
 
 more..
 
-![ToNumber2](./ToNumber2.png)
+![ToNumber2](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/e005a555-9480-47ca-9c6e-787cf983eeba)
 
 ## 2. ToString
 
 We can use '+' operator to mimic ToString operation for representation.
  
-![ToString](./tostring.png)
+![tostring](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/c3593df6-ad5b-44ae-8c10-5acd215ddfc9)
 
 more of the string operations.
 
-![ToString](./tostring1.png)
+![tostring1](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/d0ce67b8-5571-4bf0-92cc-3884f62e675e)
 
 ## Abstract Operations
 
@@ -70,7 +70,7 @@ first abstract operation that we need to learn is **ToPrimitive**.
 * if hint/preferred type is number then on our input argument we call valueOf() function to get a number & if it doesn't gets a primitive we call toString() function.
 * otherwise, if jint argument is "String" then we call toString() & then valueOf().
 
-![ToPrimitive](../Images/ToPrimitive.png) 
+![ToPrimitive](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/f3a8341c-fe71-4b92-8c12-0aaa58af2a84)
 
 (internally calls Ordinary to primitive)
 
@@ -84,13 +84,14 @@ It takes one more optional parameter called as preferred type. If we have 2 or m
 
     if hint is "default" then hint = "Number"
 
-![ToPrimitive](./ToPrimitive.png)
+
+![ToPrimitive](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/f4f0c230-d6dc-4a5c-9b9f-aa48cad69ae0)
 
 ValueOf() and toString() are not abstract operations. That means we can call them.
 
 By default toString() on a object returns -> '[object Object]' (this is a random string JS returns)
 
-By default valueOf() -> on an object returns same object.
+By default valueOf() -> on an object returns the same object.
 
 for array -> valueOf -> same array toString -> print array without parentheses.
 
@@ -116,4 +117,4 @@ Q. How can we test the ToBoolean operation?
 
 Ans: We can use **logical Not Operator(!)** 
 
-![logicalNot](./logicalNot.png)
+![logicalNot](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/a7ecbb34-3b80-4bdd-b9a7-8010f2318e61)
