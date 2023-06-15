@@ -236,3 +236,9 @@ autoglobals only works with target reference & not source.
 image 2
 
 image 3
+
+# Undefined vs Undeclared
+
+Undefined is a variable state when the scopes already know about it but in the execution phase we have not allocated it a value yet.
+
+Undeclared is a variable state when we never formally declared a variable before assignning it a value so that it has chances to become autoglobal, we try to use it.
