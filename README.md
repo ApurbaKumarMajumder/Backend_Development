@@ -242,3 +242,7 @@ image 3
 Undefined is a variable state when the scopes already know about it but in the execution phase we have not allocated it a value yet.
 
 Undeclared is a variable state when we never formally declared a variable before assignning it a value so that it has chances to become autoglobal, we try to use it.
+
+# Hoisting
+
+Hoisting is a direct consequence of lexiccal parsing that happens in JS, due to which we are able to access some function & variables before declaring them which gives us a notion that they are moved up in the file.
