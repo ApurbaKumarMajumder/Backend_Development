@@ -246,3 +246,14 @@ Undeclared is a variable state when we never formally declared a variable before
 # Hoisting
 
 Hoisting is a direct consequence of lexiccal parsing that happens in JS, due to which we are able to access some function & variables before declaring them which gives us a notion that they are moved up in the file.
+
+# Function Expresion
+
+image 1
+
+In JS, we can pass functions as an argument to another function.
+
+Function Expression are of 2 types:
+
+1. Anonymous
+2. Named
