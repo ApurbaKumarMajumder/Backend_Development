@@ -1,4 +1,4 @@
-# setTimeout and setInterval
+# 1. setTimeout and setInterval
 
 These two functions are not by default given to us by JS.
 
@@ -16,8 +16,11 @@ A callback is a function that is passed to another function.
 
 ![callbacks](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/6a0c3441-73ef-4860-9949-6721e397c4c1)
 
-# arr.map(fn)  
+# 2. arr.map(fn)
 
 **fn is a callback function**
 
 for all the elements of the given array, it passes the elements as an argument to the callback.
+
+**image**
+
