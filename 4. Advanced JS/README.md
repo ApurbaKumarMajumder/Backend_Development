@@ -14,7 +14,7 @@ A callback is a function that is passed to another function.
 
     f(g(x))  // g(x) is a function in f().
 
-**callback image**
+![callbacks](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/6a0c3441-73ef-4860-9949-6721e397c4c1)
 
 # arr.map(fn)  
 
