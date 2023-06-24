@@ -22,5 +22,5 @@ A callback is a function that is passed to another function.
 
 for all the elements of the given array, it passes the elements as an argument to the callback.
 
-**image**
+![arr map function](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/0e96ec08-9a5f-451b-af6b-56fdb3f7ced9)
 
