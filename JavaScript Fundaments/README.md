@@ -260,3 +260,15 @@ Function Expression are of 2 types:
 2. Named
 
 ![scope of function expression](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/5d694db7-841b-4ba7-9082-a898a4fcea9a)
+
+# Closures 
+
+A closure is the ability to access a parent level scope from a child scope, even after the parent function has been terminated.
+
+**image 1**
+
+At the time instance when function fun will be called, the todo function is already over.
+
+If fun is called after the completion of todo and todo has ended, how fun is able to access task variable.
+
+This happens due to closures. 
