@@ -265,6 +265,8 @@ Function Expression are of 2 types:
 
 A closure is the ability to access a parent level scope from a child scope, even after the parent function has been terminated.
 
+Closures is when a function "remembers" it's 
+
 **image 1**
 
 At the time instance when function fun will be called, the todo function is already over.
@@ -272,3 +274,4 @@ At the time instance when function fun will be called, the todo function is alre
 If fun is called after the completion of todo and todo has ended, how fun is able to access task variable.
 
 This happens due to closures. 
+
