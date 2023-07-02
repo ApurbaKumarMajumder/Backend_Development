@@ -267,7 +267,7 @@ A closure is the ability to access a parent level scope from a child scope, even
 
 Closures is when a function "remembers" it's 
 
-**image 1**
+![closures](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/7b88ed51-078e-4a33-a2ca-515380dcbb9e)
 
 At the time instance when function fun will be called, the todo function is already over.
 
