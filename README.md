@@ -265,7 +265,7 @@ Function Expression are of 2 types:
 
 A closure is the ability to access a parent level scope from a child scope, even after the parent function has been terminated.
 
-Closures is when a function "remembers" it's 
+Closures is when a function "remembers" it's lexical scope even when the function is executed outside that lexical scope.
 
 ![closures](https://github.com/ApurbaKumarMajumder/Backend_Development/assets/65047407/7b88ed51-078e-4a33-a2ca-515380dcbb9e)
 
